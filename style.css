@@ -1,0 +1,146 @@
+* { margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2192FF;
+    padding: 10px;
+    margin: 0px 0px 40px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+header h2 {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+}
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0px 70px 0px 0px;
+}
+
+.nav a {
+    color: #fff; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #F2F2F2;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-family: "Arial";
+    gap: 16px;
+}
+ img {
+    padding: 0px 20px 0px 30px;
+ }
+.card {
+    background-color: #fff ;
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa ;
+}
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+.card h1 {
+    font-size: 1.2rem;
+}
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card button:hover {
+    background-color: #f3f3f3;
+    color: #2192FF;
+}
+.card button {
+    background-color: #2192FF;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px ;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0 ) 0%);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.5;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+
+footer { 
+    background-color:#2192FF;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a { 
+    color: white;
+    font-size: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #c6d1ff;
+}
