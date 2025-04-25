@@ -1,16 +1,13 @@
-const card = [...document.querySelectorAll('.card')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+const cardContainer = document.querySelector("main"); 
+const nxtBtn = document.querySelector(".nxt-btn");
+const preBtn = document.querySelector(".pre-btn");
 
-card.forEach((item, i) => {
-    let cardDimensions = item.getBoundingClientRect();
-    let cardWidth = cardDimensions.width;
+let cardWidth = document.querySelector(".card").getBoundingClientRect().width;
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += cardWidth;
-    })
+nxtBtn.addEventListener("click", () => {
+    cardContainer.scrollLeft += cardWidth + 16; // Adicionando espaço entre os cards
+});
 
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= cardWidth;
-    })
-})
+preBtn.addEventListener("click", () => {
+    cardContainer.scrollLeft -= cardWidth + 16;
+});
